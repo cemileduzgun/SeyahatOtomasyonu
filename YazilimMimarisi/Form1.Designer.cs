@@ -179,6 +179,7 @@ namespace YazilimMimarisi
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2PictureBox1.Image = global::YazilimMimarisi.Properties.Resources.high_angle_passport_tickets_arrangement;
             this.guna2PictureBox1.ImageRotate = 0F;

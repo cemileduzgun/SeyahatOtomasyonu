@@ -52,12 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Musteri.cs" />
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +74,7 @@
     <Compile Include="Rezervasyon.Designer.cs">
       <DependentUpon>Rezervasyon.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlBaglanti.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
