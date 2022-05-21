@@ -32,19 +32,19 @@ namespace YazilimMimarisi
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker3 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker4 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ulasimTuru = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gidisTarihi = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.donusTarihi = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.girisTarihi = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cikisTarihi = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.tbBulunduguYer = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbGidecegiYer = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.konaklamaTuru = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -82,148 +82,124 @@ namespace YazilimMimarisi
             this.guna2HtmlLabel3.TabIndex = 2;
             this.guna2HtmlLabel3.Text = "Konaklama";
             // 
-            // guna2ComboBox1
+            // ulasimTuru
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 10;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.ulasimTuru.BackColor = System.Drawing.Color.Transparent;
+            this.ulasimTuru.BorderRadius = 10;
+            this.ulasimTuru.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ulasimTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ulasimTuru.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ulasimTuru.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ulasimTuru.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ulasimTuru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ulasimTuru.ItemHeight = 30;
+            this.ulasimTuru.Items.AddRange(new object[] {
             "Uçak",
             "Otobüs"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(167, 147);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(179, 36);
-            this.guna2ComboBox1.TabIndex = 3;
+            this.ulasimTuru.Location = new System.Drawing.Point(167, 147);
+            this.ulasimTuru.Name = "ulasimTuru";
+            this.ulasimTuru.Size = new System.Drawing.Size(179, 36);
+            this.ulasimTuru.TabIndex = 3;
             // 
-            // guna2DateTimePicker1
+            // gidisTarihi
             // 
-            this.guna2DateTimePicker1.BorderRadius = 10;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(167, 202);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(179, 34);
-            this.guna2DateTimePicker1.TabIndex = 5;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
+            this.gidisTarihi.BorderRadius = 10;
+            this.gidisTarihi.Checked = true;
+            this.gidisTarihi.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gidisTarihi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gidisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.gidisTarihi.Location = new System.Drawing.Point(167, 202);
+            this.gidisTarihi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gidisTarihi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gidisTarihi.Name = "gidisTarihi";
+            this.gidisTarihi.Size = new System.Drawing.Size(179, 34);
+            this.gidisTarihi.TabIndex = 5;
+            this.gidisTarihi.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
             // 
-            // guna2DateTimePicker2
+            // donusTarihi
             // 
-            this.guna2DateTimePicker2.BorderRadius = 10;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(167, 257);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(179, 34);
-            this.guna2DateTimePicker2.TabIndex = 6;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
+            this.donusTarihi.BorderRadius = 10;
+            this.donusTarihi.Checked = true;
+            this.donusTarihi.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.donusTarihi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.donusTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.donusTarihi.Location = new System.Drawing.Point(167, 257);
+            this.donusTarihi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.donusTarihi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.donusTarihi.Name = "donusTarihi";
+            this.donusTarihi.Size = new System.Drawing.Size(179, 34);
+            this.donusTarihi.TabIndex = 6;
+            this.donusTarihi.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
             // 
-            // guna2DateTimePicker3
+            // girisTarihi
             // 
-            this.guna2DateTimePicker3.BorderRadius = 10;
-            this.guna2DateTimePicker3.Checked = true;
-            this.guna2DateTimePicker3.CheckedState.Parent = this.guna2DateTimePicker3;
-            this.guna2DateTimePicker3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker3.HoverState.Parent = this.guna2DateTimePicker3;
-            this.guna2DateTimePicker3.Location = new System.Drawing.Point(611, 211);
-            this.guna2DateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker3.Name = "guna2DateTimePicker3";
-            this.guna2DateTimePicker3.ShadowDecoration.Parent = this.guna2DateTimePicker3;
-            this.guna2DateTimePicker3.Size = new System.Drawing.Size(179, 34);
-            this.guna2DateTimePicker3.TabIndex = 7;
-            this.guna2DateTimePicker3.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
+            this.girisTarihi.BorderRadius = 10;
+            this.girisTarihi.Checked = true;
+            this.girisTarihi.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.girisTarihi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.girisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.girisTarihi.Location = new System.Drawing.Point(611, 211);
+            this.girisTarihi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.girisTarihi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.girisTarihi.Name = "girisTarihi";
+            this.girisTarihi.Size = new System.Drawing.Size(179, 34);
+            this.girisTarihi.TabIndex = 7;
+            this.girisTarihi.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
             // 
-            // guna2DateTimePicker4
+            // cikisTarihi
             // 
-            this.guna2DateTimePicker4.BorderRadius = 10;
-            this.guna2DateTimePicker4.Checked = true;
-            this.guna2DateTimePicker4.CheckedState.Parent = this.guna2DateTimePicker4;
-            this.guna2DateTimePicker4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker4.HoverState.Parent = this.guna2DateTimePicker4;
-            this.guna2DateTimePicker4.Location = new System.Drawing.Point(611, 275);
-            this.guna2DateTimePicker4.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker4.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker4.Name = "guna2DateTimePicker4";
-            this.guna2DateTimePicker4.ShadowDecoration.Parent = this.guna2DateTimePicker4;
-            this.guna2DateTimePicker4.Size = new System.Drawing.Size(179, 34);
-            this.guna2DateTimePicker4.TabIndex = 8;
-            this.guna2DateTimePicker4.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
+            this.cikisTarihi.BorderRadius = 10;
+            this.cikisTarihi.Checked = true;
+            this.cikisTarihi.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cikisTarihi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cikisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.cikisTarihi.Location = new System.Drawing.Point(611, 275);
+            this.cikisTarihi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.cikisTarihi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.cikisTarihi.Name = "cikisTarihi";
+            this.cikisTarihi.Size = new System.Drawing.Size(179, 34);
+            this.cikisTarihi.TabIndex = 8;
+            this.cikisTarihi.Value = new System.DateTime(2022, 5, 20, 12, 56, 57, 61);
             // 
-            // guna2TextBox1
+            // tbBulunduguYer
             // 
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(167, 310);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(179, 36);
-            this.guna2TextBox1.TabIndex = 9;
+            this.tbBulunduguYer.BorderRadius = 10;
+            this.tbBulunduguYer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbBulunduguYer.DefaultText = "";
+            this.tbBulunduguYer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbBulunduguYer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbBulunduguYer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbBulunduguYer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbBulunduguYer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbBulunduguYer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbBulunduguYer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbBulunduguYer.Location = new System.Drawing.Point(167, 310);
+            this.tbBulunduguYer.Name = "tbBulunduguYer";
+            this.tbBulunduguYer.PasswordChar = '\0';
+            this.tbBulunduguYer.PlaceholderText = "";
+            this.tbBulunduguYer.SelectedText = "";
+            this.tbBulunduguYer.Size = new System.Drawing.Size(179, 36);
+            this.tbBulunduguYer.TabIndex = 9;
             // 
-            // guna2TextBox2
+            // tbGidecegiYer
             // 
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(167, 366);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(179, 36);
-            this.guna2TextBox2.TabIndex = 10;
+            this.tbGidecegiYer.BorderRadius = 10;
+            this.tbGidecegiYer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbGidecegiYer.DefaultText = "";
+            this.tbGidecegiYer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbGidecegiYer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbGidecegiYer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbGidecegiYer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbGidecegiYer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbGidecegiYer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbGidecegiYer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbGidecegiYer.Location = new System.Drawing.Point(167, 366);
+            this.tbGidecegiYer.Name = "tbGidecegiYer";
+            this.tbGidecegiYer.PasswordChar = '\0';
+            this.tbGidecegiYer.PlaceholderText = "";
+            this.tbGidecegiYer.SelectedText = "";
+            this.tbGidecegiYer.Size = new System.Drawing.Size(179, 36);
+            this.tbGidecegiYer.TabIndex = 10;
             // 
             // guna2HtmlLabel4
             // 
@@ -270,28 +246,24 @@ namespace YazilimMimarisi
             this.guna2HtmlLabel8.TabIndex = 17;
             this.guna2HtmlLabel8.Text = "Gideceği yer:";
             // 
-            // guna2ComboBox2
+            // konaklamaTuru
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 10;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.konaklamaTuru.BackColor = System.Drawing.Color.Transparent;
+            this.konaklamaTuru.BorderRadius = 10;
+            this.konaklamaTuru.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.konaklamaTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.konaklamaTuru.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.konaklamaTuru.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.konaklamaTuru.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.konaklamaTuru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.konaklamaTuru.ItemHeight = 30;
+            this.konaklamaTuru.Items.AddRange(new object[] {
             "Otel",
             "Çadır"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(611, 147);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(179, 36);
-            this.guna2ComboBox2.TabIndex = 18;
+            this.konaklamaTuru.Location = new System.Drawing.Point(611, 147);
+            this.konaklamaTuru.Name = "konaklamaTuru";
+            this.konaklamaTuru.Size = new System.Drawing.Size(179, 36);
+            this.konaklamaTuru.TabIndex = 18;
             // 
             // guna2HtmlLabel9
             // 
@@ -323,34 +295,28 @@ namespace YazilimMimarisi
             // guna2Button1
             // 
             this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(65)))), ((int)(((byte)(50)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(549, 408);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(145, 42);
             this.guna2Button1.TabIndex = 22;
             this.guna2Button1.Text = "Rezervasyon Yap";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(65)))), ((int)(((byte)(50)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(805, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(36, 31);
             this.guna2ControlBox1.TabIndex = 23;
             // 
@@ -365,19 +331,19 @@ namespace YazilimMimarisi
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.konaklamaTuru);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2DateTimePicker4);
-            this.Controls.Add(this.guna2DateTimePicker3);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.tbGidecegiYer);
+            this.Controls.Add(this.tbBulunduguYer);
+            this.Controls.Add(this.cikisTarihi);
+            this.Controls.Add(this.girisTarihi);
+            this.Controls.Add(this.donusTarihi);
+            this.Controls.Add(this.gidisTarihi);
+            this.Controls.Add(this.ulasimTuru);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -394,19 +360,19 @@ namespace YazilimMimarisi
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox ulasimTuru;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gidisTarihi;
+        private Guna.UI2.WinForms.Guna2DateTimePicker donusTarihi;
+        private Guna.UI2.WinForms.Guna2DateTimePicker girisTarihi;
+        private Guna.UI2.WinForms.Guna2DateTimePicker cikisTarihi;
+        private Guna.UI2.WinForms.Guna2TextBox tbBulunduguYer;
+        private Guna.UI2.WinForms.Guna2TextBox tbGidecegiYer;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox konaklamaTuru;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;

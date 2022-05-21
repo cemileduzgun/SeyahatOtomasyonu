@@ -59,6 +59,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Konaklama.cs" />
+    <Compile Include="Model\Cadir.cs" />
+    <Compile Include="Model\IKonaklama.cs" />
+    <Compile Include="Model\IUlasim.cs" />
+    <Compile Include="Model\Otel.cs" />
+    <Compile Include="Model\Otobus.cs" />
+    <Compile Include="Model\OtobusCadir.cs" />
+    <Compile Include="Model\OtobusOtel.cs" />
+    <Compile Include="Model\SoyutFabrika.cs" />
+    <Compile Include="Model\Ucak.cs" />
+    <Compile Include="Model\UcakCadir.cs" />
+    <Compile Include="Model\UcakOtel.cs" />
     <Compile Include="Musteri.cs" />
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
@@ -74,7 +86,9 @@
     <Compile Include="Rezervasyon.Designer.cs">
       <DependentUpon>Rezervasyon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seyehat.cs" />
     <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="Ulasim.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

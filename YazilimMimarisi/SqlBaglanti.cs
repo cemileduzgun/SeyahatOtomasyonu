@@ -11,7 +11,7 @@ namespace YazilimMimarisi
     {
         public SqlConnection connection()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HVTB9LK;Initial Catalog=seyahatRezervasyonu;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0GQ186F;Initial Catalog=seyahatRezervasyonu;Integrated Security=True");
             con.Open();
             return con;
         }
