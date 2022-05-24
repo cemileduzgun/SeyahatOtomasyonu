@@ -11,5 +11,7 @@ namespace YazilimMimarisi
         public string ad_soyad { get; set; }
         public string telefon { get; set; }
         public string kimlik_no { get; set; }
+
+   
     }
 }

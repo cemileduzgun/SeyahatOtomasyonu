@@ -19,6 +19,9 @@ namespace YazilimMimarisi
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            MusteriEkle musteri = new MusteriEkle();
+            musteri.Show();
+            this.Hide();
 
         }
 

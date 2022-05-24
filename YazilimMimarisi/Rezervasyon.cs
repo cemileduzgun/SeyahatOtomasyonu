@@ -17,58 +17,113 @@ namespace YazilimMimarisi
             InitializeComponent();
         }
 
+        int cadirGecefiyat = 50;
+        int otelGecefiyat = 100;
+        int ucakSaatFiyat = 200;
+        int otobusKmFiyat = 1;
+
+        public string musteriKimlikNo { get; set; }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             
-            MessageBox.Show(ulasimTuru.SelectedItem.ToString());
+           
             string secilenUlasimTuru = ulasimTuru.SelectedItem.ToString();
             string secilenKonaklamaTuru = konaklamaTuru.SelectedItem.ToString();
 
             Musteri musteri = new Musteri();
-            musteri.kimlik_no = "2397";
+            musteri.kimlik_no = musteriKimlikNo;
 
-            
+            var gidisTarihiKonaklama = gidisTarihi.Value;
+            var cikisTarihiKonaklama = cikisTarihi.Value;
+            var gunFarki = cikisTarihiKonaklama.Day - gidisTarihiKonaklama.Day;
+
+
             Ulasim ulasim = new Ulasim {
                 bulunduguYer = tbBulunduguYer.Text,
                 gidecegiYer = tbGidecegiYer.Text,
                 gidisTarihi = gidisTarihi.Value,
-                donusTarihi = donusTarihi.Value
+                donusTarihi = donusTarihi.Value,
+                koltukNumara=Convert.ToInt32(KoltukNumara_txt.Text)
+
             };
 
             Konaklama konaklama = new Konaklama
             {
                 girisTarihi = girisTarihi.Value,
-                cikisTarihi = cikisTarihi.Value
+                cikisTarihi = cikisTarihi.Value,
+                OdaveyaCadirNo = Convert.ToInt32(oda_cadir_numara.Text)
             };
 
             if(secilenUlasimTuru == "Uçak")
             {
+                var ucakBilet = Convert.ToInt32(aradakiSaat_txt.Text) * ucakSaatFiyat;
+                ulasim.toplamFiyat = ucakBilet;
                 if(secilenKonaklamaTuru == "Otel")
                 {
+                    int otelFiyat = otelGecefiyat * gunFarki;
+                    konaklama.toplamFiyat = otelFiyat;
                     Seyehat seyehat = new Seyehat(new UcakOtel(ulasim, konaklama, musteri));
                     seyehat.olustur();
                 }
                 else if(secilenKonaklamaTuru == "Çadır")
                 {
+                    int cadirFiyat = cadirGecefiyat * gunFarki;
+                    konaklama.toplamFiyat = cadirFiyat;
                     Seyehat seyehat = new Seyehat(new UcakCadir(ulasim, konaklama, musteri));
                     seyehat.olustur();
                 }
             }
             else if (secilenUlasimTuru == "Otobüs")
             {
+                var otobusBilet = Convert.ToInt32(aradaKilometre_txt.Text) *otobusKmFiyat ;
+                ulasim.toplamFiyat = otobusBilet;
                 if (secilenKonaklamaTuru == "Otel")
                 {
+                    int otelFiyat = otelGecefiyat * gunFarki;
+                    konaklama.toplamFiyat = otelFiyat;
                     Seyehat seyehat = new Seyehat(new OtobusOtel(ulasim, konaklama, musteri));
                     seyehat.olustur();
                 }
                 else if (secilenKonaklamaTuru == "Çadır")
                 {
+                    int cadirFiyat = cadirGecefiyat * gunFarki;
+                    konaklama.toplamFiyat = cadirFiyat;
                     Seyehat seyehat = new Seyehat(new OtobusCadir(ulasim, konaklama, musteri));
                     seyehat.olustur();
                 }
             }
+            MessageBox.Show("Rezervasyonunuz Oluşturulmuştur.");
         }
 
-        
+        private void ulasimTuru_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ulasimTuru.Text == "Uçak")
+            {
+                PanelOtobus.Hide();
+            }
+            else
+            {
+                PanelOtobus.Show();
+            }
+
+            if (ulasimTuru.Text == "Otobüs")
+            {
+                PanelUcak.Hide();
+            }
+            else
+            {
+                PanelUcak.Show();
+            }
+
+        }
+
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            RaporEkrani raporEkrani = new RaporEkrani();
+            raporEkrani.Show();
+            this.Hide();
+        }
     }
 }

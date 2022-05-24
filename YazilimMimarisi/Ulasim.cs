@@ -12,5 +12,12 @@ namespace YazilimMimarisi
         public string gidecegiYer { get; set; }
         public DateTime gidisTarihi { get; set; }
         public DateTime donusTarihi { get; set; }
+
+        public int aradakiKilometre { get; set; }
+        public int aradakiSaat { get; set; }
+        public int koltukNumara { get; set; }
+        public int toplamFiyat { get; set; }
+
+        
     }
 }

@@ -10,5 +10,7 @@ namespace YazilimMimarisi
     {
         public DateTime girisTarihi { get; set; }
         public DateTime cikisTarihi { get; set; }
+        public int OdaveyaCadirNo { get; set; }
+        public int toplamFiyat { get; set; }
     }
 }

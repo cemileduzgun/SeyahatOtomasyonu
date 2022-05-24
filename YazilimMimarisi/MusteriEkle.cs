@@ -17,7 +17,7 @@ namespace YazilimMimarisi
         {
             InitializeComponent();
         }
-
+        
         private Musteri musteriBilgi()
         {
             Musteri musteri = new Musteri();
@@ -31,13 +31,16 @@ namespace YazilimMimarisi
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Musteri musteri = musteriBilgi();
-
             string komut= "INSERT INTO MusteriBilgisi(ad_soyad, telefon, kimlik_no) " +
                 $"values ('{musteri.ad_soyad}', '{musteri.telefon}', '{musteri.kimlik_no}')";
-
+            
             DbManager.Instance().veritabaniKomut(komut);
             MessageBox.Show("Müşteri Eklendi");
-
+            Rezervasyon rezervasyon = new Rezervasyon();
+            rezervasyon.musteriKimlikNo = musteri.kimlik_no;
+            rezervasyon.Show();
+            this.Hide();
+            
         }
     }
 }
