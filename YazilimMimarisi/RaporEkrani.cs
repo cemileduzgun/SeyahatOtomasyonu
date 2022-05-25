@@ -24,7 +24,10 @@ namespace YazilimMimarisi
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            // json rapor
+            jsonReport json = new jsonReport();
+            json.getir();
+            MessageBox.Show("Rapor oluşturuldu");
             
         }
 
@@ -40,7 +43,7 @@ namespace YazilimMimarisi
             ReportManager reportManager = new ReportManager(reportBuilder);
 
             string str = reportManager.build();
-            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\HtmlRepor.htm", str);
+            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\", str);
         }
     }
 }

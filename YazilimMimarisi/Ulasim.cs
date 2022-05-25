@@ -8,6 +8,7 @@ namespace YazilimMimarisi
 {
     public class Ulasim
     {
+        public string ulasim_tur { get; set; }
         public string bulunduguYer { get; set; }
         public string gidecegiYer { get; set; }
         public DateTime gidisTarihi { get; set; }

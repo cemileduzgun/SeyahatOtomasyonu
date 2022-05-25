@@ -12,5 +12,6 @@ namespace YazilimMimarisi
         public DateTime cikisTarihi { get; set; }
         public int OdaveyaCadirNo { get; set; }
         public int toplamFiyat { get; set; }
+        public string konaklama_tur { get; set; }
     }
 }

@@ -43,6 +43,7 @@ namespace YazilimMimarisi
 
 
             Ulasim ulasim = new Ulasim {
+                ulasim_tur= ulasimTuru.Text,
                 bulunduguYer = tbBulunduguYer.Text,
                 gidecegiYer = tbGidecegiYer.Text,
                 gidisTarihi = gidisTarihi.Value,
@@ -55,7 +56,8 @@ namespace YazilimMimarisi
             {
                 girisTarihi = girisTarihi.Value,
                 cikisTarihi = cikisTarihi.Value,
-                OdaveyaCadirNo = Convert.ToInt32(oda_cadir_numara.Text)
+                OdaveyaCadirNo = Convert.ToInt32(oda_cadir_numara.Text),
+                konaklama_tur = konaklamaTuru.Text
             };
 
             if(secilenUlasimTuru == "Uçak")

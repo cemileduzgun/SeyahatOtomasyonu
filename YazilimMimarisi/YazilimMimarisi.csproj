@@ -65,7 +65,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="JsonFormat.cs" />
+    <Compile Include="jsonReport.cs" />
     <Compile Include="Konaklama.cs" />
     <Compile Include="Model\Cadir.cs" />
     <Compile Include="Model\IKonaklama.cs" />
