@@ -93,6 +93,10 @@
     <Compile Include="RaporEkrani.Designer.cs">
       <DependentUpon>RaporEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rapor\HtmlReport.cs" />
+    <Compile Include="Rapor\ReportBuilder.cs" />
+    <Compile Include="Rapor\ReportInfo.cs" />
+    <Compile Include="Rapor\ReportManager.cs" />
     <Compile Include="Rezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>

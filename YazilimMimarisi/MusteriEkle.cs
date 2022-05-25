@@ -37,7 +37,12 @@ namespace YazilimMimarisi
             DbManager.Instance().veritabaniKomut(komut);
             MessageBox.Show("Müşteri Eklendi");
             Rezervasyon rezervasyon = new Rezervasyon();
-            rezervasyon.musteriKimlikNo = musteri.kimlik_no;
+
+            Musteri musteriVeriGonder = new Musteri();
+            musteriVeriGonder.ad_soyad = musteri.ad_soyad;
+            musteriVeriGonder.kimlik_no = musteri.kimlik_no;
+            musteriVeriGonder.telefon = musteri.telefon;
+            rezervasyon.musteriBilgi = musteriVeriGonder;
             rezervasyon.Show();
             this.Hide();
             

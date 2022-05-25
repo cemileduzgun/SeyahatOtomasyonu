@@ -22,7 +22,7 @@ namespace YazilimMimarisi
         int ucakSaatFiyat = 200;
         int otobusKmFiyat = 1;
 
-        public string musteriKimlikNo { get; set; }
+        public Musteri musteriBilgi { get; set; }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -32,7 +32,10 @@ namespace YazilimMimarisi
             string secilenKonaklamaTuru = konaklamaTuru.SelectedItem.ToString();
 
             Musteri musteri = new Musteri();
-            musteri.kimlik_no = musteriKimlikNo;
+            musteri.ad_soyad = musteriBilgi.ad_soyad;
+            musteri.kimlik_no = musteriBilgi.kimlik_no;
+            musteri.telefon = musteriBilgi.telefon;
+
 
             var gidisTarihiKonaklama = gidisTarihi.Value;
             var cikisTarihiKonaklama = cikisTarihi.Value;
@@ -93,7 +96,14 @@ namespace YazilimMimarisi
                     seyehat.olustur();
                 }
             }
+
+            RaporEkrani raporEkrani = new RaporEkrani();
+            raporEkrani.ulasim = ulasim;
+            raporEkrani.konaklama = konaklama;
+            raporEkrani.musteri = musteri;
+            
             MessageBox.Show("Rezervasyonunuz Oluşturulmuştur.");
+            raporEkrani.Show();
         }
 
         private void ulasimTuru_SelectedIndexChanged(object sender, EventArgs e)

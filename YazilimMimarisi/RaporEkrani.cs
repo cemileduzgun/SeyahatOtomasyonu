@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
+using YazilimMimarisi.Rapor;
 namespace YazilimMimarisi
 {
     public partial class RaporEkrani : Form
     {
-        private readonly string dosyaYolu = $"C:\\Users\\windows\\Source\\Repos\\SeyahatOtomasyonuk\\YazilimMimarisi\\Seyehat.json";
+        public Ulasim ulasim { get; set; }
+        public Konaklama konaklama { get; set; }
+        public Musteri musteri { get; set; }
         public RaporEkrani()
         {
             InitializeComponent();
@@ -22,23 +25,22 @@ namespace YazilimMimarisi
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                string sorgu = "SELECT * FROM tblRezervasyon r INNER JOIN MusteriBilgisi m ON r.kimlik_no = m.kimlik_no ";
+            
+        }
 
-                var seyehatJson = DbManager.Instance().seyehat(sorgu);
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            // html rapor
+            ReportInfo reportInfo = new ReportInfo();
+            reportInfo.musteri = musteri;
+            reportInfo.konaklama = konaklama;
+            reportInfo.ulasim = ulasim;
 
-                var jsonToWrite = JsonConvert.SerializeObject(seyehatJson, Formatting.Indented);
+            ReportBuilder reportBuilder = new HtmlReport(reportInfo);
+            ReportManager reportManager = new ReportManager(reportBuilder);
 
-                using (var writer = new StreamWriter(dosyaYolu))
-                {
-                    writer.Write(jsonToWrite);
-                }
-            }
-            catch (Exception exception)
-            {
-                //ignored
-            }
+            string str = reportManager.build();
+            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\HtmlRepor.htm", str);
         }
     }
 }
