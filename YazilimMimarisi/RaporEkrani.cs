@@ -43,7 +43,21 @@ namespace YazilimMimarisi
             ReportManager reportManager = new ReportManager(reportBuilder);
 
             string str = reportManager.build();
-            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\", str);
+            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\HtmlRepor.htm", str);
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            ReportInfo reportInfo = new ReportInfo();
+            reportInfo.musteri = musteri;
+            reportInfo.konaklama = konaklama;
+            reportInfo.ulasim = ulasim;
+
+            ReportBuilder reportBuilder = new HtmlReport(reportInfo);
+            ReportManager reportManager = new ReportManager(reportBuilder);
+
+            string str = reportManager.build();
+            File.WriteAllText(@"C:\Users\windows\source\Repos\SeyahatOtomasyonue\YazilimMimarisi\XmlReport.xml", str);
         }
     }
 }

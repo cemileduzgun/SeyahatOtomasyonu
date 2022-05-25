@@ -97,6 +97,7 @@
     <Compile Include="Rapor\ReportBuilder.cs" />
     <Compile Include="Rapor\ReportInfo.cs" />
     <Compile Include="Rapor\ReportManager.cs" />
+    <Compile Include="Rapor\xmlReport.cs" />
     <Compile Include="Rezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>
